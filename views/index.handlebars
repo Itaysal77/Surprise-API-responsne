@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Homepage</title>
+    <style> body {
+      background: #333;
+      color: #fff;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the homepage of Surprise response</h1>
+    <img src="https://media.giphy.com/media/l0HlO3BJ8LALPW4sE/giphy.gif" /> 
+   <br><br><form action="http://localhost:3000/api/surprise">
+      <label for="name">Enter name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="birth_year">Enter your birth year:</label>
+      <input type="text" id="birth_year" name="birth_year"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <a href="/api/stats" class="btn btn-light mt-4">Get Stats</a>
+
+  </body>
+</html>

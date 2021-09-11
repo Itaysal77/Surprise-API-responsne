@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>STATS</title>
+    <style> body {
+      background: #333;
+      color: #fff;
+    }
+    li{
+        color:#333;
+    }
+    </style>
+  </head>
+  <body>
+<h1 class="text-center mb-3">STATS</h1>
+  
+<h2>requests:  {{{total}}}</h2>
+<ul class="list-group">
+  {{#each surprises}}
+  <li class="list-group-item">{{this.type}}: {{this.count}}</li>
+  {{/each}}
+</ul>
+
+<a href="/" class="btn btn-light mt-4">Go Back to homepage</a>
+</body>
+</html>
